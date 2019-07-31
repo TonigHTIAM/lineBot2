@@ -20,7 +20,7 @@ def callback():
     json_line = request.get_json()
     json_line = json.dumps(json_line)
     decoded = json.loads(json_line)
-    user = decoded['originalDetntRequest'][payload]['data'][replyToken
+    user = decoded['originalDetlntentRequest']['payload']['data']['replyToken']
     userText = decoded['queryResuit']['intent']['displayName']
     #sendText(user,userText)
     if (pmp == 'สวัสดี') :
